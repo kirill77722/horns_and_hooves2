@@ -1,0 +1,120 @@
+/* Стили для ссылок */
+a {
+    color: black; /* Цвет текста черный */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+a:visited {
+    color: black; /* Цвет текста черный для посещенных ссылок */
+}
+
+a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+    color: rgb(136, 127, 127); /* Изменение цвета при наведении */
+}
+
+/* Общие стили для тела страницы */
+body {
+    font-family: Arial, sans-serif; /* Шрифт для текста */
+    line-height: 1.6; /* Высота строки для лучшей читаемости */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 20px; /* Добавляем отступы */
+    background-color: #dfc675; /* Цвет фона страницы */
+}
+
+/* Стили для заголовков */
+h1, h2 {
+    text-align: center; /* Центрируем заголовки */
+    color: #333; /* Цвет заголовков */
+}
+
+/* Стили для навигации */
+nav ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+nav ul li {
+    display: inline; /* Выстраиваем ссылки в строку */
+    margin: 0 15px; /* Добавляем отступы между ссылками */
+}
+
+/* Стили для основного контента */
+main {
+    background: rgb(235, 207, 191); /* Цвет фона основного контента */
+    padding: 20px; /* Отступы внутри основного контента */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта глубины */
+}
+
+/* Стили для подвала */
+footer {
+    text-align: left; /* Центрируем текст в подвале */
+    margin-top: 20px; /* Отступ сверху */
+    color: #777; /* Цвет текста подвала */
+}
+/* Стили для кнопки "Наверх" */
+.scroll-to-top {
+    position: fixed; /* Фиксированное положение */
+    bottom: 20px; /* Отступ от нижней границы */
+    right: 20px; /* Отступ от правой границы */
+    background-color: #316c54; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скругление углов */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    font-size: 15px; /* Размер шрифта */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход */
+}
+
+.scroll-to-top:hover {
+    background-color: #c89a1e; /* Цвет фона при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+.scroll-to-top:focus {
+    outline: none; /* Убираем обводку при фокусе */
+}
+
+body {
+    text-align: center; /* Центрирование текста на странице */
+}
+
+.gallery {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.gallery img {
+    width: 150px; /* Размер превью */
+    height: auto;
+    transition: 0.3s; /* Плавный переход */
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+    color: white;
+    text-align: center;
+    opacity: 0; /* Скрыто по умолчанию */
+    transition: opacity 0.3s; /* Плавный переход */
+}
+
+.gallery:hover .caption {
+    opacity: 1; /* Показать при наведении */
+}
+header{
+    background-color: #c89a1e;
+}
+table{
+    background-color: burlywood;
+}
+img{
+    border: 3px dotted rgb(63, 66, 250);
+}

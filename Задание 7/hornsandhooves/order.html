@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="icon" href="images\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles\main.css">
+</head>
+<body>
+    <header>
+        <h1 align="center">Компания "Рога и копыта"</h1>
+        <h2 align="center">Мы работаем для вас</h2>
+    </header>
+    <nav>
+        <ul class="menu">
+        <li> <a align="center"><a href="index.html"> Главная </a></li><br>
+        <li> <a href="about.html">О компании </a></li><br>
+        <li> <a href="employee.html">Наши сотрудники</a></li><br>
+        <li> <a href="gallery.html">Галерея </a></li><br>
+        <li> <a href="education.html">Обучение </a></li><br>
+        <li> <a href="order.html">Заказ </a></li><br>
+        <li> <a href="fonts.html">Тексты </a></li><br>
+        <li> <a target="_blank" class="ugol" href="https://мвд.рф/">Мы чтим уголовный кодекс</a>
+        </ul>
+    </nav>
+    <nav>
+        <p align="center"> На рынке рогов и копыт с 1931 года.</p>  
+    </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3>Оформление заказа</h3>
+            <form action="orderup" method="post">
+                <fieldset>
+                    <legend>Способ оплаты</legend>
+                    <label>
+                        Наличный расчет
+                        <input type="radio" name="payment_method" value="cash" checked />
+                    </label>
+                    <label>
+                        Безналичный расчет
+                        <input type="radio" name="payment_method" value="cashless" />
+                    </label>
+                </fieldset>
+
+                <table>
+                    <tr>
+                        <td align="right">
+                            <label for="last_name">Фамилия</label>
+                        </td>
+                        <td>
+                            <input type="text" id="last_name" name="last_name" required placeholder="Введите фамилию" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="first_name">Имя</label>
+                        </td>
+                        <td>
+                            <input type="text" id="first_name" name="first_name" required placeholder="Введите имя" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="patronymic">Отчество</label>
+                        </td>
+                        <td>
+                            <input type="text" id="patronymic" name="patronymic" placeholder="Введите отчество" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="email">Email</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" required placeholder="Введите email" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="phone">Телефон</label>
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" name="phone" required placeholder="Введите телефон" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="password">Пароль</label>
+                        </td>
+                        <td>
+                            <input type="password" id="password" name="password" required placeholder="Введите пароль" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="password_confirm">Подтвердите пароль</label>
+                        </td>
+                        <td>
+                            <input type="password" id="password_confirm" name="password_confirm" required placeholder="Подтвердите пароль" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="okrug">Федеральный округ</label>
+                        </td>
+                        <td>
+                            <select id="okrug" name="okrug" required placeholder="Выберите федеральный округ">
+                                <option value="">Выберите округ</option>
+                                <option value="Центральный">Центральный</option>
+                                <option value="Северо-Западный">Северо-Западный</option>
+                                <option value="Приволжский">Приволжский</option>
+                                <option value="Южный">Южный</option>
+                                <option value="Северо-Кавказский">Северо-Кавказский</option>
+                                <option value="Уральский">Уральский</option>
+                                <option value="Сибирский">Сибирский</option>
+                                <option value="Дальневосточный">Дальневосточный</option>
+                            </select>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td align="right">Заказываю</td>
+                        <td></td>  
+                    </tr>
+    
+                    <tr>
+                        <td align="right">
+                            <label><input type="checkbox" name="zakaz[rog]" value="rog" /> Рога в количестве</label>
+                        </td>
+                        <td>
+                            <input type="number" name="count_rogov" size="13" min="0" placeholder="Введите количество"/> штук
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label><input type="checkbox" name="zakaz[kopit]" value="kopit" /> Копыта в количестве</label>
+                        </td>
+                        <td>
+                            <input type="number" name="count_kopit" size="13" min="0" placeholder="Введите количество"/> штук
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td valign="top" align="right">
+                            <label for="wishes">Пожелания:</label>
+                        </td>
+                        <td>
+                            <textarea id="wishes" name="wishes" placeholder="Введите ваши пожелания"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2">
+                            <input type="submit" value="Подтвердить заказ" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><i>© Бендер и компания</i></p>
+    </footer>
+</body>
+</html>

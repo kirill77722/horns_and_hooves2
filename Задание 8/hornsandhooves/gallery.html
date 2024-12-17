@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="icon" href="images\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles\main.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            margin: 0;
+        }
+        #main{
+            display: flex;
+            flex: 1;
+        }
+        #main > article {
+flex: 1;
+}
+#main > nav,
+#main > aside {
+flex: 0 0 20vw;
+background: beige;
+}
+#main > nav {
+order: -1;
+}
+header, footer {
+background:linear-gradient(rgb(255, 153, 0), rgb(240, 202, 132));;
+height: 20vh;
+}
+header, footer, article, nav, aside {
+padding: 1em;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center">Компания "Рога и копыта"</h1>
+        <h2 align="center">Мы работаем для вас</h2>
+    </header>
+    <nav1>
+        <center>
+        <ul>
+         <a align="center"><a href="index.html"> Главная </a>| <b></b>
+         <a href="about.html">О компании </a><b> | </b>
+         <a href="employee.html">Наши сотрудники</a> | <b></b>
+         <a href="gallery.html">Галерея </a> | <b></b>
+         <a href="education.html">Обучение </a> | <b></b>
+         <a href="order.html">Заказ </a> | <b></b>
+         <a href="fonts.html">Тексты </a> | <b></b>
+         <a target="_blank" class="ugol" href="https://мвд.рф/">Мы чтим уголовный кодекс</a>
+        </ul>
+    </center>
+    </nav1>
+<div id="main">
+    <nav>
+        <ul class="menu">
+        <li> <a align="center"><a href="index.html"> Главная </a></li><br>
+        <li> <a href="about.html">О компании </a></li><br>
+        <li> <a href="employee.html">Наши сотрудники</a></li><br>
+        <li> <a href="gallery.html">Галерея </a></li><br>
+        <li> <a href="education.html">Обучение </a></li><br>
+        <li> <a href="order.html">Заказ </a></li><br>
+        <li> <a href="fonts.html">Тексты </a></li><br>
+        <li> <a target="_blank" class="ugol" href="https://мвд.рф/">Мы чтим уголовный кодекс</a>
+        </ul>
+    </nav>
+        <hr>
+    </header>
+
+    <main>
+        
+            <p align="center" ><iframe src="500.500\1.jpg" name="color" width="500" height="500"></iframe>
+            <center>
+            <p>
+        <a href="500.500\1.jpg" target="color" title="Рога"><img src="100.100\1.jpg"></a>
+        <a href="Кейс\2.jpg" target="color" title="Рога"><img src="100.100\25.jpg"></a>
+        <a href="Кейс\3.jpg" target="color" title="Копыта"><img src="100.100\35.jpg"></a>
+        <a href="Кейс\4.png" target="color" title="Рога"><img src="100.100\45.png"></a>
+        <a href="Кейс\5.jpg" target="color" title="Копыта"><img src="100.100\55.jpg"></a></p>
+        </p>
+        </center>
+            
+    <center>
+        <section>
+            <h3>Анимация</h3>
+            <object data="Кейс\бык.gif" width="600" height="400">
+                <p>Ваш браузер не поддерживает Flash. Пожалуйста, обновите его.</p>
+            </object>
+        </main>
+        <main> 
+           
+
+            <h3>Аудио</h3>
+            <audio controls>
+                <source src="Кейс\Tango.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает аудио.
+            </audio> 
+            
+
+            <h3>Видео</h3>
+            <video controls width="500">
+                <source src="Кейс\videoplayback.ogg--online-audio-convert.com.mp4" type="video/ogg">
+                Ваш браузер не поддерживает видео.
+            </video> 
+
+            <h3>Видео с YouTube</h3>
+            <iframe width="500" height="500" src="https://www.youtube.com/embed/ZAU_c-QL6qo" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </center>
+    </main>
+
+    <button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Наверх</button>
+</div>
+  
+    <footer>
+        <p>© Бендер и компания</p>
+    </footer>
+</body>
+</html>
+
+
+

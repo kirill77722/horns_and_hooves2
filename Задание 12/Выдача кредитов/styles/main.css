@@ -1,0 +1,161 @@
+/* Стили для ссылок */
+a {
+    color: rgb(2, 2, 2); /* Цвет текста черный */
+    transition: color 0.3s ease; /* Плавный переход цвета */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+a:visited {
+    color: rgb(0, 0, 0); /* Цвет текста черный для посещенных ссылок */
+}
+
+a:hover {
+    text-decoration: none; /* Подчеркивание при наведении */
+    color: rgb(182, 179, 179); /* Изменение цвета при наведении */
+}
+
+/* Общие стили для тела страницы */
+body {
+    font-family: Arial, sans-serif; /* Шрифт для текста */
+    line-height: 1.6; /* Высота строки для лучшей читаемости */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 20px; /* Добавляем отступы */
+    background-image: url(фон.webp);
+}
+
+/* Стили для заголовков */
+h1, h2 {
+    text-align: center; /* Центрируем заголовки */
+    color: #333; /* Цвет заголовков */
+}
+
+main {
+    background: linear-gradient(rgb(146, 241, 241), rgb(0, 247, 255)); /* Цвет фона основного контента */
+    padding: 20px; /* Отступы внутри основного контента */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта глубины */
+}
+
+/* Стили для подвала */
+footer {
+    text-align: left; /* Центрируем текст в подвале */
+    margin-top: 50px; /* Отступ сверху */
+    color: #777; /* Цвет текста подвала */
+}
+/* Стили для кнопки "Наверх" */
+.knop {
+    
+    bottom: 20px; /* Отступ от нижней границы */
+    right: 20px; /* Отступ от правой границы */
+    background-color:rgba(22, 18, 235, 0.514); /* Цвет фона */
+    color: rgb(255, 255, 255); /* Цвет текста */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скругление углов */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    font-size: 15px; /* Размер шрифта */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Плавный переход */
+}
+
+.knop:hover {
+    background-color: #6ae8f1; /* Цвет фона при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+    
+}
+
+.knop:focus {
+    color: aliceblue;
+    outline: none /* Убираем обводку при фокусе */
+}
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+    color: white;
+    text-align: center;
+    opacity: 1; /* Скрыто по умолчанию */
+    transition: opacity 0.3s; /* Плавный переход */
+}
+
+.gallery:hover .caption {
+   background-color:rgba(155, 93, 214, 0.541);
+}
+header{
+     background: linear-gradient(rgb(0, 255, 255), rgb(162, 234, 236));
+}
+
+img{
+    border: 3px dotted rgb(173, 52, 221);
+}
+input:focus{
+    background-color: thistle;
+}
+ 
+    ul.menu {
+        width: 165px; /* Ширина меню */
+        list-style: none; /* Для списка убираем маркеры */
+        margin: 0; /* Нет отступов вокруг */
+        padding: 0; /* Убираем поля вокруг текста */
+        font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+        font-size: 10pt; /* Размер названий в пункте меню */
+    }
+    li ul {
+        position: absolute; /* Подменю позиционируются абсолютно */
+        display: none; /* Скрываем подменю */
+        margin-left: 165px; /* Сдвигаем подменю вправо */
+        margin-top: -2em; /* Сдвигаем подменю вверх */
+        }
+        li a {
+        display: block; /* Ссылка как блочный элемент */
+        padding: 5px; /* Поля вокруг надписи */
+        text-decoration: none; /* Подчеркивание у ссылок убираем */
+        color: rgb(0, 0, 0); /* Цвет текста */
+        border-bottom: none; /* Границу снизу не проводим *
+        }
+        li a:hover {
+        color: #ffe; /* Цвет текста активного пункта */
+         
+        }
+        li:hover ul {
+        display: block; /* При выделении пункта курсором мыши отображается
+        подменю */
+        }
+        ul.ty{
+            position: absolute; /* Подменю позиционируются абсолютно */
+            display: none; /* Скрываем подменю */
+            margin-left: 550px; /* Сдвигаем подменю вправо */
+            margin-top: -0.5em; /* Сдвигаем подменю вверх */
+            list-style: none;
+        }
+        @media screen and (max-width: 600px) {
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+          @media screen and (max-width: 1000px) {
+          body {
+            background-image: url(bg1.jpg);
+          }
+          nav {
+            display: none;
+          }  
+          }
+          @media screen and (max-width: 640px) {
+            nav1{
+              display: none;
+            }
+            nav {
+              display: inline;
+            }  
+            header{
+              height: 75px; /* Уменьшаем ширину блока до 90% при ширине экрана 640px и меньше */
+          }
+          footer{
+            height: 20px; /* Уменьшаем ширину блока до 90% при ширине экрана 640px и меньше */
+          }
+            }
+        
